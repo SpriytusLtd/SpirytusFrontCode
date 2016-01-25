@@ -5,13 +5,13 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>店舗のレビュー</title>
-<link rel="stylesheet" type="text/css" href="./css/style.css">
-<link href="./css/top.css" rel="stylesheet">
-<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
-<script type="application/javascript" src="./js/jquery.raty.js"></script>
-<script type="text/javascript"></script>
-<script src="./js/top.js"></script>
+<link rel="stylesheet" type="text/css" href="./../css/review_store.css">
+<link rel="stylesheet" type="text/css" href="./../css/top.css">
+<script type="text/javascript" src="./../js/jquery-1.11.3.min.js"></script>
+<script type="application/javascript" src="./../js/jquery.raty.js"></script>
+<script type="text/javascript" src="./../js/top.js"></script>
 <script>
+  $.fn.raty.defaults.path = "./../img";
   $(function(){
     $('#star1').raty({ score: 5, half: true });
     $('#star2').raty({ score: 5, readOnly: true, half: true});
@@ -27,7 +27,7 @@
 
     <div id="waku1">
       <div id="img">
-        <img src="./img/tosa1.jpg" width="500" height="400" align="right">
+        <img src="./../img/tosa1.jpg" width="500" height="400" align="right">
       </div>
 
       <div id="info">
@@ -88,7 +88,7 @@
     </div>
     <div class="content">
       <div id="page-top" class="page-top">
-        <p><a id="move-page-top" class="move-page-top"><img src="./img/pt.png"></a></p>
+        <p><a id="move-page-top" class="move-page-top"><img src="./../img/pt.png"></a></p>
       </div>
     </div>
   </div>
