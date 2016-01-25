@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>お酒のレビュー</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link href="./css/top.css" rel="stylesheet">
+<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+<script type="application/javascript" src="./js/jquery.raty.js"></script>
+<script type="text/javascript"></script>
+<script src="./js/top.js"></script>
+
+<script type="text/javascript">
+  $(function(){
+    $('#star1').raty({ score: 5 , half: true });
+    $('#star2').raty({ score: 5, readOnly: true, half: true });
+    $('#star3').raty({ score: 2, readOnly: true, half: true });
+    $('#star4').raty({ score: 5 , half: true });
+    $('#star5').raty({ score: 5 , half: true });
+    $('#star6').raty({ score: 5 , half: true });
+    $('#star7').raty({ score: 5 , half: true });
+  });
+</script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header><br><br></header>
+
+    <div id="waku1">
+
+      <div id="img">
+        <img src="./img/osake.jpg" width="500" height="400" align="right">
+      </div>
+
+      <div id="info">
+        <p aligin="left">
+        <center>
+          <br><br>
+          <h2>瀧嵐</h2>
+          四国でも良質の水が流れる川として上位に格付けされている <br>
+          「仁淀川」の水を使用した、<br>
+          透明感のあるキレのあるお酒です。<br>
+          <h4>瀧嵐 このうま酒を 酌むときの 恋にかも似る 酔心かな</h4>
+          歌人 吉井勇 が詠い愛した高知のお酒。<br><br>
+          <hr class="line">
+          HP：<a href="http://wrs.search.yahoo.co.jp/FOR=AM3uMcVV3iiYrRBTs9VVRcIA.juXp_mhiEmPeOWE.LBZWz2AzMvZ7Al7yr_hTX2gvQg7ctBBhzeKHEfDaikspZ0.H1WorLaqZ4hqx.iMlpqjUdikLdRuGO_6cjHqD.DJ2l5yuZo8iZMmdJgfDHsAMsk7fUZKM05LTWispV96QZceQ7zkSTfSN9HHYcaaMaXa.BXP9QG.EQ--/_ylt=A2RA0kg76H9Ww1QAntKDTwx.;_ylu=X3oDMTEyZHZtZjhzBHBvcwMxBHNlYwNzcgRzbGsDdGl0bGUEdnRpZANqcGMwMDE-/SIG=11achak8g/EXP=1451323899/**http%3A//kochi-sake.com/" target="blank">高知酒造株式会社</a> <br> <br>
+        </center>
+        </p>
+      </div>
+      <div class="text-area">
+        <div id="review">
+          <h3>お酒のレビュー投稿欄</h3>
+        </div>
+
+        <div id="textbox">
+          <textarea name="example1" cols="70" rows="18"></textarea>
+        </div>
+
+        <div id ="star">
+          総合評価<div id="star1"></div>
+          甘さ<div id="star4"></div>
+          辛さ<div id="star5"></div>
+          渋さ<div id="star6"></div>
+          濃く<div id="star7"></div>
+          <br>
+          <input type="submit" value="送信する">
+        </div>
+      </div>
+
+      <div class="review1">
+        <p>
+          spirytus（氏名）
+          <div id="star2"></div>
+          すごくおいしくて、飲みやすかったです！！<br>
+          値段はすこし高い気もしましたが、すっきりとした味わいが絶妙でした！<br>
+        </p>
+      </div>
+
+      <div class="review1">
+        <p>
+          spirytus（氏名）
+          <div id="star3"></div>
+          すごくおいしくて、飲みやすかったです！！<br>
+          値段はすこし高い気もしましたが、すっきりとした味わいが絶妙でした！<br>
+        </p>
+      </div>
+    </div>
+    <div class="content">
+      <div id="page-top" class="page-top">
+       <p><a id="move-page-top" class="move-page-top"><img src="./img/pt.png"></a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

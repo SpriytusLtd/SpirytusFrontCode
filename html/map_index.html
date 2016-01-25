@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> google map api test </title>
+  <style type="text/css">
+    #map { width: 400px; height: 400px; }
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+  <div>
+    住所:
+    <input id="input" onsubmit="onclicked()" />
+    <input type="button" onclick="onclicked()" value="検索" />
+    <div id="latlngtext"></div>
+  </div>
+  <script src="http://maps.google.com/maps/api/js?v=3&censor=false" type="text/javascript" charset="UTF-8"></script>
+  <script src="./map.js" type="text/javascript" charset="UTF-8"></script>
+</body>
+</html>
