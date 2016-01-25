@@ -1,2 +1,3 @@
 # SpirytusFrontCode
-HTML,CSS,JS,IMGのフオルダに分けているのでグ?
+* HTML,CSS,JS,IMGのフォルダに分けました。
+* お酒検索システムのフロントのコードを記述している
