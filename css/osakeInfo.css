@@ -1,0 +1,80 @@
+hr.line{
+  border: none;
+  border-top: 2px dotted #999;
+  width: 60%;
+}
+
+
+body{
+  color: #555;
+  background: url("../img/img1.jpg"), url("../img/img2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header{
+  height: 100px;
+}
+
+#wrapper{
+  width: 100%;
+}
+
+#info{
+  width: 500px;
+  height: 450px;
+}
+
+#waku1{
+  width: 1000px;
+  height: 450px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#img{
+  float: right;
+  width: 500px;
+  height: 450px;
+}
+
+#store{
+  width: 95%;
+}
+
+.store1{
+  width: 1000px;
+  height:270px;
+  border:1px solid #808080;
+  margin: 15px auto;
+  padding: 10px 5px 50px;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  left:30px;
+}
+
+.header{
+  width: 1000px;
+  height: 50px;
+  text-align: center;
+}
+
+.img1{
+  float: left;
+  padding-left: 120px;
+  width: 250px;
+  height: 200px;
+}
+
+.text{
+  float: right;
+  padding-right: 50px;
+  text-align: center;
+  width: 500px;
+  height: 250px;
+}
