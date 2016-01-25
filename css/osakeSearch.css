@@ -19,7 +19,7 @@ body{
   width: 100%;
 }
 
-#store1{
+.store1{
   height:250px;
   border:1px solid #808080;
   margin: 15px auto;
@@ -33,20 +33,20 @@ body{
   margin-left: auto;
 }
 
-#header{
+.header{
   width: 1000px;
   height: 50px;
   text-align: center;
 }
 
-#img1{
+.img1{
   float: left;
   padding-left: 120px;
   width: 250px;
   height: 200px;
 }
 
-#text{
+.text{
   float: right;
   padding-right: 50px;
   text-align: center;
