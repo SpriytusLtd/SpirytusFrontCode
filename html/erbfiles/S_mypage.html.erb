@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./../css/sample4.css" type="text/css">
+<title> 店舗マイページ　呑兵衛土佐巡 </title>
+<script src="./../js/jquery-2.1.4.min.js"></script>
+<script src="./../js/top.js"></script>
+</head>
+
+
+<body>
+	<header>
+	 <div class="container">
+		 <div class="header-left">
+			 <img class="logo1" src="./../img/のんべえ2.png">
+		 </div>
+		 <div class="header-left">
+			 <img class="logo2" src="./../img/rogo3.png">
+		 </div>
+	 </div>
+ </header>
+
+<div id="site-box2">
+
+<p class="title_name">店舗情報編集画面</p>
+
+<div id="All">
+
+<div id="left">
+<form>
+<ul>
+
+<li class="named">
+<label for="named">店舗名:</label>
+<input type="text1" id="named" name="name" size="30" />
+</li>
+
+<li class="jusyo">
+<label for="jusyo">住所:</label>
+<input type="text1" id="jusyo" name="jusyo" size="30" />
+</li>
+
+<li class="day">
+<label for="day">営業日:</label>
+<input type="text1" id="day" name="day" size="30" />
+</li>
+
+<li class="map">
+<label for="map">交通手段:</label>
+<input type="text1" id="map" name="map" size="30" />
+</li>
+
+<li class="seki">
+<label for="seki">総座席数:</label>
+<input type="text1" id="seki" name="seki"  size="30"/>
+</li>
+
+
+<li class="enkai">
+<label for="enkai">宴会場:</label>
+<input type="radio" name="enkai" value="あり" checked="checked"/> あり
+<input type="radio" name="enkai" value="なし"/> なし
+</li>
+
+</ul>
+</form>
+</div>
+
+
+
+<div id="right1">
+
+
+<ul>
+
+<li class="gazo">
+  <label for="gazo">画像:</label>
+  <input type="submit" value="画像登録画面へ" onClick="location.href='picture_register.html'">
+  <a href=picture.html>
+  </a>
+</li>
+
+<br>
+<br>
+
+
+<li class="phone">
+<label for="phone">電話番号:</label>
+<input type="text1" id="phone" name="phone"  size="30"/>
+</li>
+
+<li class="time">
+<label for="time">営業時間:</label>
+<input type="text1" id="time" name="time"  size="30"/>
+</li>
+
+<li class="money">
+<label for="money">平均予算:</label>
+<input type="text1" id="money" name="money"  size="30"/>
+</li>
+
+<li class="room1">
+<label for="room1">個室数:</label>
+<input type="text1" id="room1" name="room1"  size="5"/>
+</li>
+
+<li class="roomA">
+<label for="roomA">宴会場収容人数:</label>
+<input type="text1" id="roomA" name="roomA"  size="5" />
+</li>
+
+<li class="roomS">
+<label for="roomS">喫煙席数:</label>
+<input type="text1" id="roomS" name="roomS" size="5" />
+</li>
+
+</ul>
+
+</div>
+</div>
+
+
+
+<div id="best">
+<div id="best_drink">
+
+	<ul>
+	<li class="best-drink">
+	<label for="best-drink">一番おすすめする地酒:</label>
+	<br>
+	<input type="text1" id="best-drink" name="best-drink"  size="8"/>
+	</li>
+
+	<br>
+
+  <li class="drink_picture">
+    <label for="gazo">画像:</label>
+    <a href="picture_register.html">
+      <input type="submit" value="画像登録画面へ" />
+    </a>
+  </li>
+  <br>
+
+	<li>
+	<label for="cook">コメント <br></label>
+	<textarea name="freeans" rows="10" cols="25"> </textarea>
+	</li>
+	</ul>
+
+</div>
+
+<div id="best_cook">
+
+	<ul>
+
+	<li class="best-cook">
+	<label for="best-cook">一番おすすめする料理:</label>
+  <br>
+	<input type="text1" id="best-cook" name="best-cook"  size="8"/>
+	</li>
+
+	<br>
+
+
+  <li class="cook_picture">
+    <label for="gazo">画像:</label>
+    <a href="picture_register.html">
+      <input type="submit" value="画像登録画面へ" />
+    </a>
+</li>
+
+<br>
+
+	<li>
+	<label for="cook">コメント <br></label>
+	<textarea name="freeans" rows="10" cols="25"> </textarea>
+	</li>
+
+</ul>
+
+</div>
+</div>
+
+
+<div id="favorite">
+
+<div id="osake11">
+<label for="osake">おすすめ地酒 <br></label>
+<textarea name="freeans" rows="10" cols="25"> </textarea>
+</div>
+
+<div id="food">
+<label for="food">おすすめ食材<br></label>
+<textarea name="freeans" rows="10" cols="25"> </textarea>
+</div>
+
+<div id="cook">
+<label for="cook">おすすめ一品料理 <br></label>
+<textarea name="freeans" rows="10" cols="25"> </textarea>
+</div>
+
+</div>
+
+<div id="sonota2">
+
+<ul>
+
+<li class="HP">
+<label for="HP">店舗のHPのURL:</label>
+<input type="text2" id="HP" name="HP"  size="55" value=http://>
+</li>
+
+<li class="AP">
+<label for="AP">アピールポイント:</label>
+<input type="text2" id="AP" name="AP"  size="55"/>
+</li>
+
+
+
+</ul>
+
+</div>
+
+
+<p class="complete">
+<a href="S_mypage_complete.html">
+<input type="submit" value="編集完了" />
+</a>
+</p>
+
+<div class=content>
+<div id="page-top" class="page-top">
+<p><a id="move-page-top" class="move-page-top"><img src = "./../img/pt.png"></a></p>
+</div>
+</div>
+
+
+</div>
+
+<footer>
+  <HR style="margin: 1em 0 ;">
+  <div class="Copyright">
+    Copyright (C) 2016 Spirytus. All Rights Reserved.
+  </div>
+</footer>
+
+</body>
+</html>

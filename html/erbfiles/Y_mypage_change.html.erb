@@ -1,0 +1,131 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./../css/mypage2.css" type="text/css">
+<title> プロフィール編集　呑兵衛土佐巡 </title>
+<script src="./../js/jquery-2.1.4.min.js"></script>
+<script>
+$(function(){
+    var setFileInput = $('.imgInput'),
+    setFileImg = $('.imgView');
+
+    setFileInput.each(function(){
+        var selfFile = $(this),
+        selfInput = $(this).find('input[type=file]'),
+        prevElm = selfFile.find(setFileImg),
+        orgPass = prevElm.attr('src');
+
+        selfInput.change(function(){
+            var file = $(this).prop('files')[0],
+            fileRdr = new FileReader();
+
+            if (!this.files.length){
+                prevElm.attr('src', orgPass);
+                return;
+            } else {
+                if (!file.type.match('image.*')){
+                    prevElm.attr('src', orgPass);
+                    return;
+                } else {
+                    fileRdr.onload = function() {
+                        prevElm.attr('src', fileRdr.result);
+                    }
+                    fileRdr.readAsDataURL(file);
+                }
+            }
+        });
+    });
+});
+</script>
+</head>
+
+<body>
+
+
+  <header>
+   <div class="container">
+     <div class="header-left">
+       <img class="logo1" src="./../img/のんべえ2.png">
+     </div>
+     <div class="header-left">
+       <img class="logo2" src="./../img/rogo3.png">
+     </div>
+   </div>
+ </header>
+
+<div id="site-box1">
+
+<div id="title_name2">
+プロフィール編集
+</div>
+
+<div id="all3">
+
+<div id="left3">
+<form>
+<ul>
+
+<li class="e-mail">
+<label for="e-mail">E-mailアドレス:</label>
+<input type="text3" id="e-mail" name="e-mail" size="40" />
+</li>
+
+<li class="Y_name">
+<label for="Y_name">ユーザネーム:</label>
+<input type="text3" id="Y_name" name="Y_name" size="40" />
+</li>
+
+<li class="seibetu">
+<label for="seibetu">性別:</label>
+<input type="radio" name="seibetu" value="男" checked="checked"/> 男
+<input type="radio" name="seibetu" value="女"/> 女
+</li>
+
+<li class="old">
+<label for="old">年齢:</label>
+<input type="text3" id="old" name="old" size="40" />
+</li>
+
+<li class="from">
+<label for="from">出身:</label>
+<input type="text3" id="from" name="from" size="40" />
+</li>
+
+</ul>
+</form>
+</div>
+
+<div id="right3">
+<form>
+<ul>
+<li>
+<label for="gazo">画像:</label>
+	<div class="imgInput">
+	<input type="file" name="file1">
+	<img src="" width="218px" height="180px" alt="" class="imgView" />
+	</div>
+</li>
+</ul>
+</form>
+</div>
+
+<p class="complete">
+<a href="Y_mypage.html">
+<input type="submit" value="編集完了" />
+</a>
+</p>
+
+</div>
+
+<HR style="margin: 1em 0 ;">
+
+</div>
+
+<footer>
+  <div id="Copyright">
+    Copyright (C) 2016 Spirytus. All Rights Reserved.
+  </div>
+</footer>
+
+</body>
+</html>
