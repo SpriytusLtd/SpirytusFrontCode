@@ -4,22 +4,7 @@ hr.line{
   width: 60%;
 }
 
-body{
-    color: #555;
-    background: url("../img/img1.jpg"), url("../img/img2.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-  　width: 100%;
-  　height: 100%;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-#wrapper{
-  width: 100%;
-}
-
-.store1{
+.store_search_wrapper{
   height:250px;
   border:1px solid #808080;
   margin: 15px auto;
@@ -33,20 +18,20 @@ body{
   margin-left: auto;
 }
 
-.header{
+.store_search_title{
   width: 1000px;
   height: 50px;
   text-align: center;
 }
 
-.img1{
+.store_search_img{
   float: left;
   padding-left: 50px;
   width: 250px;
   height: 200px;
 }
 
-.text{
+.store_search_text{
   float: right;
   padding-right: 50px;
   text-align: center;
